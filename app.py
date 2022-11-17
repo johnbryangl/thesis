@@ -7,7 +7,6 @@ app = Flask(__name__)
 def evaluate():
     if request.method == 'POST':
         csv_file = request.files['csv_file']
-
     return render_template('evaluate.html')
 
 def evaluate_data(csv_file):
